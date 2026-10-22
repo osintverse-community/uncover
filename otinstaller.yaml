@@ -121,7 +121,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/uncover@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/uncover@sha256:890504d950f4c0959dd10386f3a8f01721f35664f339df95c3985253a3ae951b
   platforms: [linux/amd64, linux/arm64]
   command: ["uncover", "-q", "{query}", "-e", "{engine}", "-l", "{limit}", "-j", "-silent", "-nc", "-duc"]
   output_format: jsonl
